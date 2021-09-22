@@ -1,0 +1,13 @@
+site_name: Notebooks for Data Science
+
+theme:
+  name: material
+
+nav:
+- Home: index.md
+- Notebook page: 
+    - "note": python/notebook.ipynb
+- Python file: python_script.py
+
+plugins:
+  - mkdocs-jupyter
