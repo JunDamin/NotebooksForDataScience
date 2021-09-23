@@ -2,12 +2,14 @@ site_name: Notebooks for Data Science
 
 theme:
   name: material
-
+  custom_dir: overrides
 nav:
 - Home: index.md
-- Notebook page: 
-    - "note": python/notebook.ipynb
-- Python file: python_script.py
+- Statistics:
+  - Bayesian Statistics: 
+    - "bayesian approach for vaccine efficacy": python/BayesianApproachForVaccineEfficacy.ipynb
+- Programming:
+    - "Concepts": python_script.py
 
 plugins:
   - mkdocs-jupyter
