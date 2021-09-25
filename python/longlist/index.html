@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.8">
+    
+    
+      
+        <title>무작위 대조 실험 - Notebooks for Data Science</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.92558b1b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Notebooks for Data Science" class="md-header__button md-logo" aria-label="Notebooks for Data Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Notebooks for Data Science
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              무작위 대조 실험
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Notebooks for Data Science" class="md-nav__button md-logo" aria-label="Notebooks for Data Science" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Notebooks for Data Science
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Statistics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Statistics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Statistics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      <label class="md-nav__link" for="__nav_2_1">
+        Bayesian Statistics
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bayesian Statistics" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Bayesian Statistics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BayesianApproachForVaccineEfficacy/" class="md-nav__link">
+        Bayesian Approach for COVID-19 Vaccine Efficacy
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Programming
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Programming" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Programming
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python_script/" class="md-nav__link">
+        Concepts
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+        
+                
+                
+                <h1 id="_1">무작위 대조 실험</h1>
+<p>무작위 대조 실험(Randomized Control Trial, RCT)을 이야기 하기 앞서 우리는 어떻게 어떤 것의 효과를 알 수 있는지 생각해 보자.</p>
+<p>사람의 면역이라는 것은 사람마다 다르기 때문에 어떤 사람은 백신이 없어도 코로나에 안걸릴 수 있고 어떤 사람은 다른 사람들 보다 쉽게 코로나에 거릴 수 있다. </p>
+<p>그래서 만약에 우리가 백신의 효능을 측정하는 데 한 사람은 90대 어르신이고 한사람은 20대 건장한 사람이라고 해서 20대 청년에게는 백신을 주고 90대 어르신에게는 백신을 맞추지 않게 실험을 했다고 한다면 우리는 이 결과를 믿을 수 있을까?</p>
+<p>아마 대부분의 사람들은 다르게 생각할 것이다. 왜냐하면 건강한 사람과 그렇지 않은 사람을 대상으로 비교 했기 때문이다. 백신 때문에 20대 청년이 건강한 것인지 아니면 단지 젊어서 더 건강했던 것인지 우리는 알 수 없기 때문이다. 실험에 참가하는 사람이 근본적으로 다른 상황에서 비교를 하는 것은 맞지 않다.</p>
+<p>그렇기 때문에 어떤 것의 효과를 이해하기 위해서는 완전히 동등한 한 쌍이 필요하다. 한 사람에게는 주고 완전히 동일한 다른 한 사람에게는 주지 않아서 그 이후 발생하는 차이는 그 행위 혹은 물질의 효과로 보는 것이다. </p>
+<p>이 아이디어에는 치명적인 문제가 있는데 우리는 완전히 동일한 한쌍의 사람을 구할 수 없다는 점이다. 쌍둥이라고 하더라도 자라난 환경이 미묘하게 다를 수 밖에 없는데 그 차이가 효과의 차이를 일으키지 않는다고 어떻게 보장할 수 있겠는가?</p>
+<p>이런 문제를 해결하는 방법으로 등장하는 것이 RCT다. RCT는 단어는 생소할 지 몰라도 아이디어는 아주 간단하다. 무작위로 사람들을 구분한다면 우리가 관찰 할 수 없는 부분 까지도 모두 포함하여 두 집단은 통계적으로 아주 유사한 집단이 된다는 점이다. 공정하게 동전을 던지듯 이렇게 통계적으로 동등한 두 집단을 만들어서 한 집단에는 백신을 놔주고 다른 집단에는 백신처럼 보이는 플라시보 물질을 주입하는 것이다. </p>
+<p>한 사람 한 사람은 다르겠지만 집단의 성질은 통계적으로 일정 범주 안에서 동등하다. 그렇게 실험을 한 결과를 비교하면 우리는 그 효능을 상당히 신뢰할 수 있을 것이다.</p>
+<h1 id="gigo">오래된 법칙 : GIGO</h1>
+<p>데이터가 쓰레기면 결과도 쓰레기다.</p>
+<h1 id="knowing-uncertainty">얼마나 정확한 걸까?(Knowing uncertainty)</h1>
+<p>운이 좋아서 혹은 나빠서 100명중 1명이 100명 중 2명이 되었다면 결과는 얼마나 차이나게 될까? 단순하게 생각해 보면 2배 차이가 나게 된다. 
+확률은 평균적으로 1.1명일 수 있지만 우리가 관찰 하는 값은 걸렸거나 안걸렸거나 하는 현실에 살고 있기 때문이다.</p>
+<p>그래서 100명 중 1명과 1000명 중 10명은 같은 비율이지만 1명이 확률적으로 더 생겼을 때 결과에 영향을 주는 범주는 100% 대 10%로 아주 크게 차이가 나게 된다.</p>
+<p>이러한 불확실성을 아는 것이 정책 결정에 아주 중요한 요소가 될 것이다.</p>
+<p>그렇다면 백신 예방효과의 불확실성을 계량해 보자.</p>
+<p>작은 모델에서 부터 시작한다.</p>
+<p>10명이 있었을 때 4명이 양성이면 양성 비율은 몇펴센트일까?</p>
+<p>간단하게 생각하면 0.4(40%)로 볼 것이다.</p>
+<p>그런데 확률적으로 0.39도 가능할 것이고 0.41도 가능할 것이다.</p>
+<p>그렇다면, 우리는 어떻게 계산해 볼 수 있을까?</p>
+<p>베이지안적인 아이디어로 반대로 생각해 보자.</p>
+<p>10명 중 4명이 양성이었을 때 유병률이 0.4 일 확률을 생각해보자.</p>
+<p>베이즈 정리를 생각해 보자면, 데이터가 주어졌을 때 가설이 참 일 확률은 가설이 참일 거라 생각하는 확률과 가설에서 데이터가 나올 확률의 곱과 같다.</p>
+<p>$$P(H|\text{data}) \propto P(H) \cdot P(\text{data}|H)$$</p>
+<p>따라서, 
+$$
+\begin{align}
+       P(H=0.4|\text{4 positives,  6 negatives}) &amp;\propto P(H=0.4) \times P(\text{4 positives, 6 negatives}|H=0.4) \
+       &amp;= P(H=0.4) \times (0.4)^4 \cdot (0.6)^6
+\end{align}
+$$</p>
+<h1 id="_2">베이즈 법칙</h1>
+<p>계량을 하기 앞서 한가지 정리해 보고 가야 할 부분이 있다. 바로 베이지안 통계 모델의 근본이 되는 베이즈 법칙이다. </p>
+<p>사실 베이즈 법칙은 조건부확률의 정의에서 자연스럽게 도출 된다.</p>
+<h1 id="grid-vs-mcmc">Grid vs. MCMC</h1>
+<h1 id="_3">시간에 따라 변화한다는 것은</h1>
+                
+              
+        
+                <script src="https://utteranc.es/client.js"
+                        repo="JunDamin/NotebooksForDataScience"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+        
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.94ec81fe.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.48dfec6c.min.js"></script>
+      
+    
+  </body>
+</html>
