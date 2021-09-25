@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Notebooks for Data Science
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+여러가지 데이터 과학과 관련된 내용을 노트북으로 정리해 놓는 공간입니다.
 
-## Commands
+## 주요 주제
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* statistics: 여러 통계 관련된 내용을 정리하고자 합니다.
+* programming: 컴퓨터 프로그래밍과 관련된 내용을 정리해보고자 합니다.
+* books: 책을 읽고 따라해 보려고 합니다.
