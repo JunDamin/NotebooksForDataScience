@@ -10,6 +10,7 @@ nav:
     - "bayesian approach for vaccine efficacy": python/BayesianApproachForVaccineEfficacy.ipynb
 - Programming:
     - "Concepts": python_script.py
+    - "tips" : python/UsingPlantuml.ipynb
 
 plugins:
   - mkdocs-jupyter
