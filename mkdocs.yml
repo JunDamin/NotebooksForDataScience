@@ -9,13 +9,15 @@ nav:
   - Bayesian Statistics: 
     - "bayesian approach for vaccine efficacy": python/BayesianApproachForVaccineEfficacy.ipynb
 - Programming:
-  - "Concepts": python_script.py
+  - Concepts: python_script.py
   - python:
     - python/01_randomWalks.ipynb
-  - Julia Data Science:
+  - "Julia Data Science":
     - julia/data_science/01_preface.ipynb
     - julia/data_science/02_why_julia.ipynb
-  - "etc"
+    - julia/data_science/03_julia_basics.ipynb
+    - julia/data_science/04_juliaDataFrames.ipynb
+  - "etc":
     - python/UsingPlantuml.ipynb
 plugins:
   - mkdocs-jupyter
