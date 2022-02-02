@@ -16,7 +16,7 @@ nav:
     - julia/data_science/01_preface.ipynb
     - julia/data_science/02_why_julia.ipynb
     - julia/data_science/03_julia_basics.ipynb
-    - julia/data_science/04_juliaDataFrames.ipynb
+    - julia/data_science/04_DataFrames.ipynb
   - "etc":
     - python/UsingPlantuml.ipynb
 plugins:
